@@ -4,7 +4,6 @@ import com.cucumber.framework.page.LandingPage;
 import com.cucumber.framework.utils.TestContextSetup;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LandingPageStepDefinition {
 
