@@ -20,8 +20,6 @@ dependencies {
     // Use TestNG framework, also requires calling test.useTestNG() below
     testImplementation 'org.testng:testng:7.5'
 
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:31.1-jre'
     implementation 'io.cucumber:cucumber-java:7.14.0'
     implementation 'io.cucumber:cucumber-testng:7.14.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.14.1'

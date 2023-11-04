@@ -3,6 +3,8 @@ package com.cucumber.framework.utils;
 import com.cucumber.framework.page.PageObjectManager;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+
 public class TestContextSetup {
     public WebDriver driver;
     public String landingPageProductName;
@@ -10,7 +12,7 @@ public class TestContextSetup {
     public TestBase testBase;
     public GenericUtils genericUtils;
 
-    public TestContextSetup(){
+    public TestContextSetup() throws IOException {
         testBase = new TestBase();
         pageObjectManager = new PageObjectManager(testBase.webDriverManager());
         genericUtils = new GenericUtils(testBase.webDriverManager());
