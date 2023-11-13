@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/features",
         glue = "com/cucumber/framework/steps",
-        dryRun = true
+        tags = "@PlaceOrder"
 )
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
 

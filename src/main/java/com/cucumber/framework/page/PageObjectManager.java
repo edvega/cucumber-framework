@@ -16,4 +16,8 @@ public class PageObjectManager {
     public OffersPage getOffersPage(){
         return new OffersPage(driver);
     }
+
+    public CheckoutPage getCheckoutPage() {
+        return new CheckoutPage(driver);
+    }
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 public class TestBase {
@@ -22,6 +23,7 @@ public class TestBase {
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 driver = new ChromeDriver();
             }
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             driver.get(qaUrl);
         }
         return driver;
